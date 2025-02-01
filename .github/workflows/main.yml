@@ -1,0 +1,17 @@
+name: Run GitHub Action
+
+on: 
+  push:
+    branches:
+      - main  # Runs the workflow on every push to the main branch
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 23f1002558@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
